@@ -1,0 +1,85 @@
+.divider {
+  margin: 0 0 22px !important;
+  font-size: 15px !important;
+  .anticon {
+    margin-right: 10px;
+  }
+}
+.theme-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+  span {
+    font-size: 14px;
+  }
+  .ant-switch {
+    width: 46px;
+  }
+  //导航模式
+  &-model {
+    position: relative;
+    width: 44px;
+    height: 36px;
+    margin-right: 16px;
+    background-color: #f0f2f5;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 25%;
+      content: '';
+      top: 0;
+      left: 0;
+    }
+    &-img {
+      position: absolute;
+      bottom: 4px;
+      right: 2px;
+      z-index: 10;
+    }
+  }
+  //侧边菜单布局
+  &-model1 {
+    &::before {
+      width: 33%;
+      height: 100%;
+      background-color: #001529;
+    }
+    &::after {
+      background-color: #fff;
+    }
+  }
+  //顶部菜单布局
+  &-model2 {
+    &::after {
+      background-color: #001529;
+    }
+  }
+  //混合菜单布局
+  &-model3 {
+    &::before {
+      top: 25%;
+      width: 33%;
+      height: 85%;
+      background-color: #fff;
+    }
+
+    &::after {
+      background-color: #001529;
+    }
+  }
+}
+.theme-item2 {
+  justify-content: center;
+}
+.theme-item3 {
+  justify-content: unset;
+}
