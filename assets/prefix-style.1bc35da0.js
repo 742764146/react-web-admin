@@ -1,0 +1,1 @@
+var t=null,l=["Webkit","Moz","O","ms"],s=function(e){t||(t=document.createElement("div"));var a=t.style;if(e in a)return e;for(var n=e.charAt(0).toUpperCase()+e.slice(1),r=l.length;r>=0;r--){var i=l[r]+n;if(i in a)return i}return!1};export{s as p};

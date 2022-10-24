@@ -1,0 +1,1 @@
+function e(u){var a=function(r){var i=r.dispatch,d=r.getState;return function(c){return function(t){return typeof t=="function"?t(i,d,u):c(t)}}};return a}var n=e();n.withExtraArgument=e;var h=n;export{h as t};
